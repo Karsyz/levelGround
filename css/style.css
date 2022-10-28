@@ -1,0 +1,459 @@
+/* Box Model */
+* {
+     box-sizing: border-box;
+}
+
+html {
+     font-size: 62.5%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.headerHeroWrapper {
+     background: rgb(102, 118, 138);
+}
+
+header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.logo {
+     display: block;
+     padding: 0;
+     margin: 12px 0;
+     height: 10rem;
+}
+
+img.btmlogo {
+     height: 4rem;
+     margin-right: 12px;
+     padding: 0
+}
+
+nav a {
+     text-decoration: none;
+     margin: 0 2rem;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 300;
+     text-decoration: none;
+     font-size: 2rem;
+     color: white;
+     text-transform: uppercase;
+     
+}
+
+.button {
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: .7rem .7rem .6rem .7rem;
+     margin: 12px 12px 0 0;
+     background: white;
+     border-radius: 3px;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 400;
+     text-decoration: none;
+     font-size: 1.7rem;
+     color: rgb(102, 118, 138);
+}
+
+.hero {
+     margin: 20px 0 0 0;
+     text-align: center;
+     font-family: 'Oswald', sans-serif;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+section.hero h1 {
+     padding: 10px 0 0 0;
+     margin: 0;
+     font-weight: 400;
+     font-size: 5rem;
+     text-transform: uppercase;
+}
+
+.grit {
+     color: rgb(240, 89, 89);
+     font-style: italic;
+     font-weight:600
+}
+
+section.hero p {
+     padding: 0;
+     margin: 3rem;
+     font-weight: 300;
+     font-size: 2rem;
+     text-align: center;
+     max-width: 930px;
+}
+
+section.hero a {
+     /* padding: 0 0 7rem 0; */
+     /* margin: 0 0 7rem 0; */
+     font-weight: 300;
+     font-size: 3rem;
+     font-family: 'Open Sans', sans-serif;
+     text-decoration: none;
+     color: white;
+}
+
+.vidWrapper {
+     padding: 0 0 30px 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+
+.vidWrapper span + span {
+     margin-left: 10px;
+
+}
+
+.iconHeight {
+     font-size: 4rem;
+}
+
+.inner {
+     padding: 30px 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+section.why,
+section.volunteer {
+     text-align: center;
+}
+
+section.why h2,
+section.volunteer h3 {
+     padding: 0;
+     margin: 0;
+     font-weight: 500;
+     font-size: 3.5rem;
+     font-family: 'Open Sans', sans-serif;
+     color: black;
+     text-transform: uppercase;
+}
+
+section.why p,
+section.volunteer p {
+     display: block;
+     padding: 0;
+     margin: 2rem auto 5rem auto;
+     width: 90%;
+     font-weight: 400;
+     font-size: 1.7rem;
+     font-family: 'Open Sans', sans-serif;
+     text-decoration: none;
+     color: black;
+     max-width: 780px;
+}
+
+section.services {
+     background: rgb(219, 223, 226);
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+}
+
+div.divLeft,
+div.divRight {
+     padding: 20px 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+
+
+.divLeft h3,
+.divRight h3 {
+     padding: 0;
+     margin: 2rem 0 2rem 0;
+     font-weight: 700;
+     font-size: 2rem;
+     font-family: 'Oswald', sans-serif;
+     color: black;
+     text-transform: uppercase;
+}
+
+.divLeft p,
+.divRight p {
+     /* display: inline-block; */
+     padding: 0;
+     margin: 2rem 0 5rem 0;
+     font-weight: 500;
+     font-size: 1.7rem;
+     font-family: 'Open Sans', sans-serif;
+     color: black;
+     width: 90%;
+     max-width: 450px;
+     text-align: justify;
+}
+
+.divLeft a,
+.divRight a,
+section.volunteer a {
+     display: inline;
+     text-align: center;
+     padding: 1rem 3rem;
+     margin: 1rem auto;
+     font-weight: 700;
+     font-size: 1.7rem;
+     font-family: 'Oswald', sans-serif;
+     color: black;
+     text-transform: uppercase;
+     border: 1px solid black;
+     background: rgb(219, 223, 226);
+     border-radius: 5px;
+     text-decoration: none;
+}
+
+section.volunteer a {
+     background: white;
+}
+
+
+footer {
+     background:rgb(22, 31, 42);
+     color: white;
+}
+
+.footerInfoWrapper {
+     /* padding: 30px 0; */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.footerBtmInner {
+     /* padding: 30px 0; */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+section.footerLeft {
+      width: 25rem;
+}
+
+section.footerRight {
+     width: 25em;
+     margin: 0 3rem 0 0;
+}
+
+section.footerBtm {
+     clear: both;
+     /* height: 7rem; */
+     /* padding: 1rem 0 0 0; */
+     /* margin: 1rem 3rem; */
+     border-top: 0.1rem solid white;
+}
+
+
+
+div.footerBtmInner p {
+     /* padding: 0 12px; */
+     margin-left: 12px;
+     font-weight: 500;
+     font-size: 1.5rem;
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+}
+
+div.socials ul {
+     padding-left: 0;
+}
+
+div.socials,
+div.siteMap,
+div.contribute {
+     margin: 0 0 0 3rem;
+     padding: 0;
+}
+
+div.socials li,
+div.siteMap li,
+div.contribute li {
+     display: inline-block;
+     color: white;
+}
+
+div.socials i,
+div.siteMap i,
+div.contribute i {
+     color: white;
+     margin: 1rem 0;
+}
+
+div.socials i {
+     margin-right: 2rem;
+}
+
+div.socials i + i {
+     margin-left: 1rem;
+     margin-right: 1rem;
+}
+
+div.socials i + i + i {
+     margin-left: 2rem;
+}
+
+div.siteMap span,
+div.contribute span {
+     padding: 0;
+     margin: 1rem 0;
+     font-weight: 500;
+     font-size: 1.7rem;
+     font-family: 'Open Sans', sans-serif;
+     color: grey;
+     text-transform: uppercase;
+}
+
+div.siteMap ul,
+div.contribute ul {
+     padding-left: 0;
+     margin-bottom: 3rem;
+}
+
+div.siteMap li a,
+div.contribute li a {
+     padding: 0;
+     margin: 0;
+     font-weight: 500;
+     font-size: 1.5rem;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     text-decoration: none;
+}
+
+div.siteMap li a {
+     padding-right: 5.4rem;
+}
+
+div.contribute li a {
+     padding-right: 5.8rem;
+}
+
+
+section.footerRight ul {
+     list-style: none;
+}
+
+
+section.footerRight h4 {
+     padding: 2rem 0 0 0;
+     margin: 0 0 0 0;
+     font-weight: 500;
+     font-size: 2rem;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+
+}
+
+section.footerRight > ul li,
+section.footerRight > ul li a {
+     padding: 0;
+     margin: 0.7rem 0 0 0;
+     font-weight: 300;
+     font-size: 1.5rem;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     text-decoration: none;
+
+}
+
+section.footerRight > ul li a {
+     font-weight: 400;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 400px) {
+     .footerInfoWrapper {
+          /* padding: 30px 0; */
+          flex-direction: column;
+          justify-content: center;
+     }
+ 
+     section.footerRight {
+          margin-right: 0;
+          width: 50%;
+     }
+
+     section.footerRight h4 {
+          padding: 0;
+     }
+
+     section.footerRight ul {
+          padding: 0;
+     }
+
+     section.footerLeft{
+          margin-left: 0;
+          width: 50%;
+     }
+
+     div.socials{
+          margin-left: 0;
+          width: auto;
+     }
+
+     div.socials ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     div.siteMap {
+          margin-left: 0;
+          width: auto;
+     }
+
+     div.contribute {
+          margin-left: 0;
+          width: auto;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     section.services {
+          padding: 0;
+          flex-direction: column;
+     }
+
+     div.divLeft {
+          padding-top: 30px;
+          
+     }
+
+     div.divRight {
+          padding-top: 0px;
+          
+     }
+ 
+}
